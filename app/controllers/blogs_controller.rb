@@ -35,7 +35,7 @@ class BlogsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /blogs/1
+  # PATCH/PUT /blogs/1 
   # PATCH/PUT /blogs/1.json
   def update
     respond_to do |format|
@@ -59,7 +59,7 @@ class BlogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-      @blog = Blog.find(params[:id])
+      @blog = Blog.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
