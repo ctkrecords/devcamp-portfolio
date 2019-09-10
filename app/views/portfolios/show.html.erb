@@ -1,4 +1,14 @@
 <%= image_tag @portfolio_item.main_image %>
 <h2><%= @portfolio_item.title %></h2>
-<h3><%= @portfolio_item.title %></h3>
+<em><%= @portfolio_item.title %></em>
 <p><%= @portfolio_item.body %></p>
+
+<h3>Technologies Used: </h3>
+
+<% @portfolio_item.technologies.each do |t| %>
+<ul>
+    <li><%= t.name %></li>
+</ul>    
+<% end %>
+
+<%= link_to  "Back", portfolios_path %>
