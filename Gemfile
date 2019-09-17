@@ -16,7 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
-
+#Devise GEM
+gem 'devise', '~> 4.7', '>= 4.7.1' 
 #Gem friendly-id
 gem 'friendly_id', '~> 5.2.4'
 # Use CoffeeScript for .coffee assets and views
