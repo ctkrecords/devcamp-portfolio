@@ -14,4 +14,8 @@ module ApplicationHelper
             content_tag(:p, greeting, class: "source-greeting")
         end
     end
-end
+
+    def copyright_generator
+       CtkrecordsViewTool::Renderer.copyright 'CTK Records', 'All rights reserved'
+    end
+end 

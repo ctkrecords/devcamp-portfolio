@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ctkrecords/ctkrecords_view_tool
+  revision: de17357fc0f33c7bc56df360ee18db518c4f4763
+  specs:
+    ctkrecords_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -203,6 +209,7 @@ DEPENDENCIES
   bootstrap (~> 4.3.1)
   byebug
   coffee-rails (~> 4.2)
+  ctkrecords_view_tool!
   devise (~> 4.7, >= 4.7.1)
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
