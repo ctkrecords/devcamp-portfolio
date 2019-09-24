@@ -1,6 +1,6 @@
 <h1>Ruby on Rails Portfolio items</h1>
 
-<%= link_to 'Create a new Item', new_portfolio_path %>
+<%= link_to 'Create a new Item', new_portfolio_path if logged_in?(:site_admin) %>
 
 <% @rails_portfolio_items.each do |item| %>
     <h2><%= link_to item.title, portfolio_show_path(item) %></h2>
@@ -8,7 +8,7 @@
     <p><%= item.body %></p>
     <%= image_tag item.thumb_image unless item.thumb_image.nil? %>
     <br>
-    <%= link_to 'Edit', edit_portfolio_path(item) %>
+    <%= link_to 'Edit', edit_portfolio_path(item) if logged_in?(:site_admin) %>
     |
-    <%= link_to 'Delete Portfolio Item', portfolio_path(item), method: :delete, data: {confirm: "Are you sure on remove #{item.title}?"} %> 
+    <%= link_to 'Delete Portfolio Item', portfolio_path(item), method: :delete, data: {confirm: "Are you sure on remove #{item.title}?"} if logged_in?(:site_admin) %> 
 <% end %>
