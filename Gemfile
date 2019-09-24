@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'ctkrecords_view_tool', '~> 0.1.0'
+
+gem 'petergate', '~> 2.0', '>= 2.0.1'
