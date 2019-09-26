@@ -1,12 +1,4 @@
 <div class="col-md-8 blog-main">
-  <div class="pb-4 mb-4 border-bottom">
-    <h2 class="font-italic">
-      My Blog
-    </h2>
-    <%= link_to "Write a new Blog", new_blog_path if logged_in?(:site_admin) %>
-  </div>
-
-
   <%= render @blogs %>
 
   <nav class="blog-pagination">
