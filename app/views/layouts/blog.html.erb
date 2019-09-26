@@ -26,17 +26,17 @@
     <%= render  "shared/blog_nav" %>
     <!--End of nav-->
 
+  </div>
     <!--Start of container and row element-->
-
     <main role="main" class="container">
       <div class="row">
 
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <!--p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p-->
 
         <%= yield %>
         <!--Start of sidebar-->
-        <aside class="col-md-4 blog-sidebar">
+        <aside class="col-md-3 blog-sidebar">
           <div class="p-4 mb-3 bg-light rounded">
             <h4 class="font-italic">About</h4>
             <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit
@@ -72,26 +72,24 @@
         </aside><!-- /.blog-sidebar -->
         <!--End of sidebar-->
 
-        <!--Start of footer-->
-
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-              href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-
-        <!--End of footer-->
-
-        <%= render  "shared/nav", location: "bottom" %>
+        <!--<%= render  "shared/nav", location: "bottom" %>-->
 
         <%= source_helper("blog") %>
 
-      </div>
+      </div><!-- /.row -->
     </main>
 
-  </div>
+    <!--Start of footer-->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+          href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+    <!--End of footer-->
 
 </body>
 
