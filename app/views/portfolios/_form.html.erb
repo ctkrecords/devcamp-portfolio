@@ -1,31 +1,43 @@
 <%= form_for(portfolio_item) do |form| %>
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+      <%= form.label :title %>
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <div class="form-group">
+      <%= form.label :subtitle %>
+      <%= form.text_field :subtitle, class: "form-control" %>
+    </div>
+
   </div>
-
-  <div class="field">
-    <%= form.label :subtitle %>
-    <%= form.text_field :subtitle %>
+  <div class="col-6">
+    <div class="form-group">
+      <%= form.label :body %>
+      <%= form.text_area :body, class: "form-control", rows: 10 %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
 
-  <ul>
+<div class="col-12">
+  <hr>
+  <h4>Technologies used:</h4>
+
+  <div>
     <%= form.fields_for :technologies do |tech_form| %>
-    <li>
+    <div class="form-group">
       <%= tech_form.label :name %>
-      <%= tech_form.text_field :name %>      
-    </li>
+      <%= tech_form.text_field :name, class: "form-control" %>
+    </div>
     <% end %>
-  </ul>
-
-  <div class="actions">
-    <%= form.submit %>
   </div>
+
+  <div class="form-group">
+    <%= form.submit "Save portfolio item", class: "btn btn-primary" %>
+    <%= link_to  "Back", portfolios_path, class: "btn btn-info" %>
+  </div>
+</div>
 
 <% end %>
