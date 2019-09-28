@@ -2,5 +2,7 @@
     <h2 class="font-italic">
         My Blog
     </h2>
-    <%= link_to "Write a new Blog", new_blog_path if logged_in?(:site_admin) %>
+    <% if logged_in?(:site_admin) %>
+      <%= link_to "Write a new Blog", new_blog_path, class: "btn btn-sm btn-outline-dark" %>
+    <% end %>
 </div>
