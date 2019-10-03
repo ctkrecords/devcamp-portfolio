@@ -28,3 +28,4 @@
 
 #Dont show the secrets
 /config/secrets.yml
+.env
