@@ -42,7 +42,7 @@ body {
 }
 
 .cover-container {
-  max-width: 52em;
+  max-width: 57em;
 }
 
 
@@ -149,4 +149,12 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: url('home.jpg') no-repeat;
   background-size: cover;
+}
+
+.tech-news{
+  margin: 20px;
+}
+
+.tech-news > .card{
+  padding: 20px;
 }
